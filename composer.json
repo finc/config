@@ -1,0 +1,38 @@
+{
+    "name": "finc/config",
+    "decription": "Configuration management component for ZF3 applications.",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Sebastian Kehr",
+            "email": "kehr@ub.uni-leipzig.de"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "finc\\Config\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "finc\\Config\\": "test/"
+        }
+    },
+    "require": {
+        "php": ">=7.0",
+        "zendframework/zend-config": "^3.1",
+        "zendframework/zend-config-aggregator": "^1.1",
+        "zendframework/zend-eventmanager": "^3.2",
+        "zendframework/zend-servicemanager": "^3.3",
+        "webmozart/glob": "^4.1",
+        "symfony/yaml": "^3.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.5"
+    },
+    "extra": {
+        "zf": {
+            "component": "finc\\Config"
+        }
+    }
+}
