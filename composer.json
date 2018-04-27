@@ -1,5 +1,5 @@
 {
-    "name": "vufind-org/vufind-config",
+    "name": "vufind-org/vufindconfig",
     "decription": "VuFind configuration management component",
     "license": "GPL-2.0",
     "authors": [

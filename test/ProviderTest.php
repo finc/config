@@ -21,7 +21,7 @@
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  *
  * @category VuFind
- * @package  vufind-org/vufind-config
+ * @package  vufind-org/vufindconfig
  * @author   Sebastian Kehr <kehr@ub.uni-leipzig.de>
  * @license  http://opensource.org/licenses/gpl-2.0.php GNU GPLv2
  * @link     https://vufind.org
@@ -35,7 +35,7 @@ use Zend\EventManager\FilterChain;
  * VuFind Configuration Provider Test Class
  *
  * @category VuFind
- * @package  vufind-org/vufind-config
+ * @package  vufind-org/vufindconfig
  * @author   Sebastian Kehr <kehr@ub.uni-leipzig.de>
  * @license  http://opensource.org/licenses/gpl-2.0.php GNU GPLv2
  * @link     https://vufind.org

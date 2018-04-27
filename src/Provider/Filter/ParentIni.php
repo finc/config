@@ -21,7 +21,7 @@
  * Inc. 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA
  *
  * @category VuFind
- * @package  vufind-org/vufind-config
+ * @package  vufind-org/vufindconfig
  * @author   Demian Katz <demian.katz@villanova.edu>
  * @author   Sebastian Kehr <kehr@ub.uni-leipzig.de>
  * @license  http://opensource.org/licenses/gpl-2.0.php GNU GPLv2
@@ -37,7 +37,7 @@ use Zend\EventManager\Filter\FilterIterator as Chain;
  * VuFind Configuration Provider ParentIni Filter
  *
  * @category VuFind
- * @package  vufind-org/vufind-config
+ * @package  vufind-org/vufindconfig
  * @author   Demian Katz <demian.katz@villanova.edu>
  * @author   Sebastian Kehr <kehr@ub.uni-leipzig.de>
  * @license  http://opensource.org/licenses/gpl-2.0.php GNU GPLv2
