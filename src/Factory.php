@@ -1,6 +1,6 @@
 <?php
 /**
- * finc Configuration Factory
+ * VuFind Configuration Factory
  *
  * Copyright (C) 2018 Leipzig University Library <info@ub.uni-leipzig.de>
  *
@@ -19,13 +19,13 @@
  * along with this program; if not, write to the Free Software Foundation,
  * Inc. 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA
  *
- * @category finc
- * @package  finc/config
+ * @category VuFind
+ * @package  vufind-org/vufind-config
  * @author   Sebastian Kehr <kehr@ub.uni-leipzig.de>
  * @license  http://opensource.org/licenses/gpl-2.0.php GNU GPLv2
- * @link     https://finc.info
+ * @link     https://vufind.org
  */
-namespace finc\Config;
+namespace VuFind\Config;
 
 use Symfony\Component\Yaml\Yaml as YamlParser;
 use Zend\Config\Factory as Base;
@@ -33,13 +33,13 @@ use Zend\Config\Reader\Ini as IniReader;
 use Zend\Config\Reader\Yaml as YamlReader;
 
 /**
- * finc Configuration Factory
+ * VuFind Configuration Factory
  *
- * @category finc
- * @package  finc/config
+ * @category VuFind
+ * @package  vufind-org/vufind-config
  * @author   Sebastian Kehr <kehr@ub.uni-leipzig.de>
  * @license  http://opensource.org/licenses/gpl-2.0.php GNU GPLv2
- * @link     https://finc.info
+ * @link     https://vufind.org
  */
 class Factory extends Base
 {

@@ -1,6 +1,6 @@
 <?php
 /**
- * finc Configuration Provider Test Class
+ * VuFind Configuration Provider Test Class
  *
  * PHP version 7
  *
@@ -20,25 +20,25 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  *
- * @category finc
- * @package  finc/config
+ * @category VuFind
+ * @package  vufind-org/vufind-config
  * @author   Sebastian Kehr <kehr@ub.uni-leipzig.de>
  * @license  http://opensource.org/licenses/gpl-2.0.php GNU GPLv2
- * @link     https://finc.info
+ * @link     https://vufind.org
  */
-namespace finc\Config;
+namespace VuFind\Config;
 
 use PHPUnit\Framework\TestCase;
 use Zend\EventManager\FilterChain;
 
 /**
- * finc Configuration Provider Test Class
+ * VuFind Configuration Provider Test Class
  *
- * @category finc
- * @package  finc/config
+ * @category VuFind
+ * @package  vufind-org/vufind-config
  * @author   Sebastian Kehr <kehr@ub.uni-leipzig.de>
  * @license  http://opensource.org/licenses/gpl-2.0.php GNU GPLv2
- * @link     https://finc.info
+ * @link     https://vufind.org
  */
 class ProviderTest extends TestCase
 {

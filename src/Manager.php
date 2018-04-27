@@ -1,6 +1,6 @@
 <?php
 /**
- * finc Configuration Manager
+ * VuFind Configuration Manager
  *
  * Copyright (C) 2018 Leipzig University Library <info@ub.uni-leipzig.de>
  *
@@ -19,25 +19,25 @@
  * along with this program; if not, write to the Free Software Foundation,
  * Inc. 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA
  *
- * @category finc
- * @package  finc/config
+ * @category VuFind
+ * @package  vufind-org/vufind-config
  * @author   Sebastian Kehr <kehr@ub.uni-leipzig.de>
  * @license  http://opensource.org/licenses/gpl-2.0.php GNU GPLv2
- * @link     https://finc.info
+ * @link     https://vufind.org
  */
 
-namespace finc\Config;
+namespace VuFind\Config;
 
 use Zend\Config\Config;
 
 /**
- * finc Configuration Manager
+ * VuFind Configuration Manager
  *
- * @category finc
- * @package  finc/config
+ * @category VuFind
+ * @package  vufind-org/vufind-config
  * @author   Sebastian Kehr <kehr@ub.uni-leipzig.de>
  * @license  http://opensource.org/licenses/gpl-2.0.php GNU GPLv2
- * @link     https://finc.info
+ * @link     https://vufind.org
  */
 class Manager
 {

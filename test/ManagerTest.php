@@ -1,6 +1,6 @@
 <?php
 /**
- * finc Configuration Manager Test Class
+ * VuFind Configuration Manager Test Class
  *
  * PHP version 7
  *
@@ -20,27 +20,27 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  *
- * @category finc
- * @package  finc/config
+ * @category VuFind
+ * @package  vufind-org/vufind-config
  * @author   Sebastian Kehr <kehr@ub.uni-leipzig.de>
  * @license  http://opensource.org/licenses/gpl-2.0.php GNU GPLv2
- * @link     https://finc.info
+ * @link     https://vufind.org
  */
 
-namespace finc\Config;
+namespace VuFind\Config;
 
-use Interop\Container\ContainerInterface;
+use Psr\Container\ContainerInterface;
 use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;
 
 /**
- * finc Configuration Manager Test Class
+ * VuFind Configuration Manager Test Class
  *
- * @category finc
- * @package  finc/config
+ * @category VuFind
+ * @package  vufind-org/vufind-config
  * @author   Sebastian Kehr <kehr@ub.uni-leipzig.de>
  * @license  http://opensource.org/licenses/gpl-2.0.php GNU GPLv2
- * @link     https://finc.info
+ * @link     https://vufind.org
  */
 class ManagerTest extends TestCase
 {

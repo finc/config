@@ -1,6 +1,6 @@
 <?php
 /**
- * finc Test configuration aggregation
+ * VuFind Test configuration aggregation
  *
  * Copyright (C) 2018 Leipzig University Library <info@ub.uni-leipzig.de>
  *
@@ -19,9 +19,9 @@
  *
  * @author   Sebastian Kehr <kehr@ub.uni-leipzig.de>
  * @license  http://opensource.org/licenses/gpl-2.0.php GNU GPLv2
- * @link     https://vufind.org/wiki/development Wiki
+ * @link     https://vufind.org
  */
-use finc\Config\Provider\Basic as BasicProvider;
+use VuFind\Config\Provider\Basic as BasicProvider;
 use Zend\ConfigAggregator\ConfigAggregator;
 
 return function ($cachePath) {

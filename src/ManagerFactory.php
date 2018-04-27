@@ -1,6 +1,6 @@
 <?php
 /**
- * finc Configuration Manager Factory
+ * VuFind Configuration Manager Factory
  *
  * Copyright (C) 2018 Leipzig University Library <info@ub.uni-leipzig.de>
  *
@@ -19,27 +19,27 @@
  * along with this program; if not, write to the Free Software Foundation,
  * Inc. 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA
  *
- * @category finc
- * @package  finc/config
+ * @category VuFind
+ * @package  vufind-org/vufind-config
  * @author   Sebastian Kehr <kehr@ub.uni-leipzig.de>
  * @license  http://opensource.org/licenses/gpl-2.0.php GNU GPLv2
- * @link     https://finc.info
+ * @link     https://vufind.org
  */
-namespace finc\Config;
 
-use Interop\Container\ContainerInterface;
-use Zend\ServiceManager\Factory\FactoryInterface;
+namespace VuFind\Config;
+
+use Psr\Container\ContainerInterface;
 
 /**
- * finc Configuration Manager Factory
+ * VuFind Configuration Manager Factory
  *
- * @category finc
- * @package  finc/config
+ * @category VuFind
+ * @package  vufind-org/vufind-config
  * @author   Sebastian Kehr <kehr@ub.uni-leipzig.de>
  * @license  http://opensource.org/licenses/gpl-2.0.php GNU GPLv2
- * @link     https://finc.info
+ * @link     https://vufind.org
  */
-class ManagerFactory implements FactoryInterface
+class ManagerFactory
 {
     /**
      * Creates a {@see Manager} instance.
@@ -50,18 +50,14 @@ class ManagerFactory implements FactoryInterface
      *                                          {@see Manager::__construct()}
      *
      * @return Manager
-     * @throws \Psr\Container\ContainerExceptionInterface
-     * @throws \Psr\Container\NotFoundExceptionInterface
      * @throws \Exception
      */
     public function __invoke(
-        ContainerInterface $container,
-        $requestedName,
-        array $options = null
+        ContainerInterface $container, $requestedName, array $options = null
     ): Manager {
         Factory::init();
 
-        $defaults = $container->get('config')['finc']['config'];
+        $defaults = $container->get('config')['vufind']['config_manager'];
         $parameters = array_replace($defaults, $options ?? []);
         $configPath = $parameters['configPath'];
 
