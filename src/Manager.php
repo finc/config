@@ -141,16 +141,16 @@ class Manager
         // if the given path was already demanded return the corresponding data
         if ($this->trueOn($demandedConfig, 'demanded', ...$path)) {
             $data = $this->getAt($demandedConfig, 'content', ...$path);
-            return $data instanceof Config ? $data->toArray() : $data;
+        } else {
+            // otherwise look-up the aggregated configuration,
+            $data = $this->getAt($this->getAggregatedConfig(), ...$path);
+            // then store the data in the demanded configuration object,
+            $this->setAt($demandedConfig, $data, 'content', ...$path);
+            // then flag the data as «demanded» for the specified path,
+            $this->setAt($demandedConfig, true, 'demanded', ...$path);
+            // then cache the demanded configuration
+            Factory::toFile($this->demandedConfigPath, $demandedConfig);
         }
-        // otherwise look-up the aggregated configuration,
-        $data = $this->getAt($this->getAggregatedConfig(), ...$path);
-        // then store the data in the demanded configuration object,
-        $this->setAt($demandedConfig, $data, 'content', ...$path);
-        // then flag the data as «demanded» for the specified path,
-        $this->setAt($demandedConfig, true, 'demanded', ...$path);
-        // then cache the demanded configuration
-        Factory::toFile($this->demandedConfigPath, $demandedConfig);
 
         // finally return the configuration data
         return $data instanceof Config ? $data->toArray() : $data;
